@@ -22,7 +22,9 @@ export interface TireMovement {
 }
 
 export interface TireDetail extends Tire {
-  pressureDepth: number;
+  pressure: number;
+  depth: number;
   movements: TireMovement[];
   nextMovement?: string;
+  opinion?: string;
 }
